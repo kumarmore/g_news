@@ -1,0 +1,28 @@
+name: news_app
+description: A Flutter news application using GNews API with GetX and SQLite.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.5          # GetX for state management and navigation
+  http: ^1.1.0         # For making HTTP requests to GNews API
+  sqflite: ^2.3.0      # SQLite database for history storage
+  path_provider: ^2.1.1 # To access device file system for SQLite
+  path: ^1.8.3         # For path manipulation with SQLite
+  url_launcher: ^6.1.10    # For opening news URL
+  share_plus: ^7.0.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0 # For linting and code quality
+
+flutter:
+  uses-material-design: true
+
+  # Optional: Add assets if you plan to include images or fonts later
+  # assets:
+  #   - assets/images/
